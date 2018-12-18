@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+        <img src="../../../../images/briefcase.png" alt="briefcase-img">
+       Recent Transactions
+  </div>
+
+  <div class="panel-body" >
+    <table class="table border-collapse">
+        <tr *ngFor="let trans of transaction">
+          <td width="10px" style.background-color="{{trans.categoryCode}}" > </td>
+          <td class="historyCell">
+            <div>{{trans.transactionDate | date : "MMM. d"}}</div>
+          </td>
+          <td class="historyCell">
+            <div>
+              <img class="logo" src="{{trans.merchantLogo}}" width="50px">
+            </div>
+          </td>
+          <td class="historyCell">
+            <div>
+              <B>{{trans.merchant}}</B><br><small>{{trans.transactionType}}</small>
+            </div>
+          </td>
+          <td class="historyCell">
+            <div>
+              <B>-{{trans.amount | currency}}</B>
+            </div>
+          </td>
+        </tr>
+    </table>
+  </div>
+
+</div>

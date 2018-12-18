@@ -1,0 +1,43 @@
+.style{
+	text-align: center;
+	font-size: 1.5rem;
+}
+input {
+	border: none;
+	border-bottom: 2px solid lightgray;
+}
+.smallText {
+	color: grey;
+	font-size: 16px;
+}
+
+button {
+	background: #e25a2c;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	padding: 3px 6px;
+	font-size: 15px;
+	line-height: 1.8;
+	appearance: none;
+	box-shadow: none;
+	text-shadow: -1px 1px #964C33;
+	border: none;
+	border-radius: 3px;
+}
+
+button:focus {
+	outline: none
+}
+
+button:hover {
+	background-color: #C8481C;
+	text-shadow: -1px 1px #964C33;
+}
+
+.panel{
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px #888888;
+
+}
